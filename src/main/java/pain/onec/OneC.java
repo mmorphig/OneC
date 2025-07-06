@@ -39,6 +39,7 @@ public class OneC extends MeteorAddon {
 		Modules.get().add(new BuildCase());
 		Modules.get().add(new OneCDiscordPresence());
 		Modules.get().add(new OneCFlight());
+		Modules.get().add(new AutoWither());
 	}
 	
 	@Override

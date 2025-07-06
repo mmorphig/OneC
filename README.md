@@ -11,8 +11,9 @@ Meteor Client, some snippets, the Discord presence module, and the flight module
 
 ## Module List:
 
+- AutoWither, places withers in front of you, either on click or automatically.
+- BetterFlight, **replaces** meteor's flight module, but with hopefully better anti-kick. Will probably conflict with flight modules in other addons if there are any.
 - BuildCase, builds a staircase in a cardinal direction, can got up or down, uses blocks from the hotbar in order. Flying is recommended for some uses ;)
 - 1c Discord Presence, puts OneC as your Discord activity, show your pride!
-- BetterFlight, Flight, **replaces** meteor's flight module, but with hopefully better anti-kick. Will probably conflict with flight modules in other addons if there are any.
 
 ### Requires [Meteor Client](https://meteorclient.com/)!

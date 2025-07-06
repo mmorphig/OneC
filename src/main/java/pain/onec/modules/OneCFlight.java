@@ -5,7 +5,6 @@ import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.mixin.ClientPlayerEntityAccessor;
 import meteordevelopment.meteorclient.mixin.PlayerMoveC2SPacketAccessor;
 import meteordevelopment.meteorclient.settings.*;
-import meteordevelopment.meteorclient.systems.modules.Categories;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.orbit.EventHandler;
@@ -42,7 +41,7 @@ public class OneCFlight extends Module {
 
     private final Setting<Double> speed = sgGeneral.add(new DoubleSetting.Builder()
         .name("speed")
-        .description("Your speed when flying.")
+        .description("Your speed when flying. Speeds too high will hitch and leave a lot of logs. Around 0.2 is the max recommended. Velocity is a little safer with higher speeds in here.")
         .defaultValue(0.1)
         .min(0.0)
         .build()
@@ -72,7 +71,7 @@ public class OneCFlight extends Module {
 
     private final Setting<Integer> delay = sgAntiKick.add(new IntSetting.Builder()
         .name("delay")
-        .description("The amount of delay, in ticks, between flying down a bit and return to original position")
+        .description("The amount of delay, in ticks.")
         .defaultValue(20)
         .min(1)
         .sliderMax(200)
@@ -81,7 +80,7 @@ public class OneCFlight extends Module {
 
     private final Setting<Integer> offTime = sgAntiKick.add(new IntSetting.Builder()
         .name("off-time")
-        .description("The amount of delay, in milliseconds, to fly down a bit to reset floating ticks.")
+        .description("The amount of delay, in ticks")
         .defaultValue(1)
         .min(1)
         .sliderRange(1, 20)
