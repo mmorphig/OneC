@@ -12,10 +12,10 @@ import meteordevelopment.orbit.EventHandler;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.item.BlockItem;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3i;
-import net.minecraft.item.BlockItem;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -124,7 +124,7 @@ public class BuildCase extends Module {
 	
 	    if (playerEyes.distanceTo(Vec3d.ofCenter(nearest)) > placeDistance.get()) return;
 	
-	    if (!mc.world.getBlockState(nearest).isAir()) {
+	    if (mc.world.getBlockState(mc.player.getBlockPos().down()).isSolidBlock(mc.world, mc.player.getBlockPos().down())) {
 	        placedPositions.add(nearest);
 	        return;
 	    }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "onec-addon",
-  "version": "0.3.2",
+  "version": "0.4.1",
   "name": "OneC",
   "description": "OneC is a compilation of modules. I did not make all of these.",
   "authors": [

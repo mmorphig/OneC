@@ -10,6 +10,7 @@ import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.orbit.EventHandler;
+
 import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -77,7 +78,7 @@ public class AutoWither extends Module {
         if (delayLeft > 0 && autoPlace.get()) delayLeft--;
         
         Direction facing = getCardinalFacing(mc.player.getYaw());
-        basePos = mc.player.getBlockPos().offset(facing, 2);
+        basePos = mc.player.getBlockPos().offset(facing, 2).up();
 
         boolean useKeyPressed = mc.options.useKey.isPressed();
 

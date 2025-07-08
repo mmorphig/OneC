@@ -4,6 +4,7 @@ import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import meteordevelopment.meteorclient.utils.misc.Version;
+
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.minecraft.item.Items;
@@ -40,6 +41,8 @@ public class OneC extends MeteorAddon {
 		Modules.get().add(new OneCDiscordPresence());
 		Modules.get().add(new OneCFlight());
 		Modules.get().add(new AutoWither());
+		Modules.get().add(new AutoSplashPotion());
+		Modules.get().add(new AutoArmorMend());
 	}
 	
 	@Override

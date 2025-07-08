@@ -1,8 +1,10 @@
 package pain.onec.mixin;
 
 import meteordevelopment.meteorclient.systems.config.Config;
+
 import net.minecraft.client.gui.screen.SplashTextRenderer;
 import net.minecraft.client.resource.SplashTextResourceSupplier;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -40,6 +42,14 @@ public class OneCSplashTextMixin {
                 "PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT",
                 "At room temperature",
                 "Contains stairs",
+                "This is a bucket",
+                "It contains a bucket",
+                "Mountains of... water?",
+                "Masons from the start",
+                "Nerds co.",
+                "All coulumns",
+                "No comment",
+                "HER NAME IS KENZIE",
                 "mamsnrhbr chehfde in der soder"
         );
     }

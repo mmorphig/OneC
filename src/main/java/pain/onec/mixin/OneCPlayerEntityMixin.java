@@ -1,16 +1,19 @@
 package pain.onec.mixin;
 
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import pain.onec.modules.OneCFlight;
 import meteordevelopment.meteorclient.systems.modules.movement.Flight;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.World;
 import net.minecraft.entity.EntityType;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import pain.onec.modules.OneCFlight;
 
 @Mixin(PlayerEntity.class)
 public abstract class OneCPlayerEntityMixin extends LivingEntity {

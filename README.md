@@ -11,6 +11,8 @@ Meteor Client, some snippets, the Discord presence module, and the flight module
 
 ## Module List:
 
+- AutoArmorMend, automatically mends armor with bottles o' enchanting in the hotbar.
+- AutoSplashPotion, automatically splashes potions from the hotbar if it's effect is not active.
 - AutoWither, places withers in front of you, either on click or automatically.
 - BetterFlight, **replaces** meteor's flight module, but with hopefully better anti-kick. Will probably conflict with flight modules in other addons if there are any.
 - BuildCase, builds a staircase in a cardinal direction, can got up or down, uses blocks from the hotbar in order. Flying is recommended for some uses ;)

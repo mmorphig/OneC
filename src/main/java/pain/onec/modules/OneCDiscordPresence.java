@@ -16,6 +16,7 @@ import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.misc.MeteorStarscript;
 import meteordevelopment.orbit.EventHandler;
 import org.meteordev.starscript.Script; // Don't ask
+
 import net.minecraft.client.gui.screen.*;
 import net.minecraft.client.gui.screen.multiplayer.AddServerScreen;
 import net.minecraft.client.gui.screen.multiplayer.ConnectScreen;
