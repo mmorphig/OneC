@@ -47,7 +47,7 @@ public class OneCSplashTextMixin {
                 "Mountains of... water?",
                 "Masons from the start",
                 "Nerds co.",
-                "All coulumns",
+                "All columns",
                 "No comment",
                 "HER NAME IS KENZIE",
                 "mamsnrhbr chehfde in der soder"
