@@ -9,6 +9,7 @@
   },
   "mixins": [
     "OneCSplashTextMixin",
-    "OneCPlayerEntityMixin"
+    "OneCPlayerEntityMixin",
+    "OneCMultiplayerScreenMixin"
   ]
 }
