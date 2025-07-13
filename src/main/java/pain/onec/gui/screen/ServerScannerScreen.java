@@ -48,11 +48,11 @@ public class ServerScannerScreen extends WindowScreen {
 
     @Override
     public void initWidgets() {
+        WHorizontalList infoList = add(theme.horizontalList()).expandX().widget();
         WTable table = add(theme.table()).expandX().widget();
 
-        table.add(theme.label("I very, very strongly recommend you do not use this in it's current state, but it is here if you want it. Back up your servers.dat file before using."));
-        table.row();
-
+        infoList.add(theme.label("I very, very strongly recommend you do not use this in it's current state, \nbut it is here if you want it. Back up your servers.dat file before using."));
+        
         table.add(theme.label("Start IP:")).padRight(10);
         startIpField = table.add(theme.textBox(settings.startIp)).expandX().widget();
         table.row();

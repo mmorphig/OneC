@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pain.onec.modules.*;
 
+
 public class OneC extends MeteorAddon {
 	public static final Logger LOG = LoggerFactory.getLogger(OneC.class);
 	public static final Category Main1c = new Category("1c", Items.SNOWBALL.getDefaultStack());
@@ -43,6 +44,7 @@ public class OneC extends MeteorAddon {
 		Modules.get().add(new AutoWither());
 		Modules.get().add(new AutoSplashPotion());
 		Modules.get().add(new AutoArmorMend());
+		Modules.get().add(new Schizophrenia());
 	}
 	
 	@Override

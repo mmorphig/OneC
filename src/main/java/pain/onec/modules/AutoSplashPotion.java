@@ -18,12 +18,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ThrowablePotionItem;
 import net.minecraft.util.Hand;
 
+import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
 import pain.onec.OneC;
-
-import java.util.List;
 
 /* 
  * AutoSplashPotion module
