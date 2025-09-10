@@ -23,19 +23,19 @@ Meteor Client, some snippets, the Discord presence module, and the flight module
 
 - ServerScanner, button on the multiplyer screen opens the menu for the server scanner, back up your servers.dat file before using, just in case. Extremely basic and inefficient, I do not recommend using this.
 - Some custom splashes, stupid stuff:
-  Boop on the snoot!
-  Blep!
-  PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT
-  At room temperature
-  Contains stairs
-  This is a bucket
-  It contains a bucket
-  Mountains of... water?
-  Masons from the start
-  Nerds co.
-  All columns
-  No comment
-  HER NAME IS KENZIE
-  mamsnrhbr chehfde in der soder
+  - Boop on the snoot!
+  - Blep!
+  - PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT PAT
+  - At room temperature
+  - Contains stairs
+  - This is a bucket
+  - It contains a bucket
+  - Mountains of... water?
+  - Masons from the start
+  - Nerds co.
+  - All columns
+  - No comment
+  - HER NAME IS KENZIE
+  - mamsnrhbr chehfde in der soder
 
 ### Requires [Meteor Client](https://meteorclient.com/)!
