@@ -9,7 +9,7 @@
 
 Meteor Client, some snippets, the Discord presence module, and the flight module
 
-## v0.5.2 Module List:
+## v0.5.3 Module List:
 
 - AutoArmorMend, automatically mends armor with bottles o' enchanting in the hotbar.
 - AutoSplashPotion, automatically splashes potions from the hotbar if it's effect is not active.
@@ -19,7 +19,7 @@ Meteor Client, some snippets, the Discord presence module, and the flight module
 - Schizophrenia, un-removes Herobrine, client-side only
 - 1c Discord Presence, puts OneC as your Discord activity, show your pride!
 
-## v0.5.2 Other features:
+## v0.5.3 Other features:
 
 - ServerScanner, button on the multiplyer screen opens the menu for the server scanner, back up your servers.dat file before using, just in case. Extremely basic and inefficient, I do not recommend using this.
 - Some custom splashes, stupid stuff:
