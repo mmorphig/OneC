@@ -23,7 +23,7 @@ public abstract class OneCPlayerEntityMixin extends LivingEntity {
 
     @Inject(method = "getOffGroundSpeed", at = @At("HEAD"), cancellable = true)
     private void replaceGetOffGroundSpeed(CallbackInfoReturnable<Float> info) {
-        if (!getWorld().isClient) return;
+        if (!getEntityWorld().isClient()) return;
 
         if (Modules.get().get(OneCFlight.class).isActive()) {
             float speed = Modules.get().get(OneCFlight.class).getOffGroundSpeed();

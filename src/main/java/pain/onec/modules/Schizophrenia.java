@@ -13,7 +13,7 @@ import java.util.Random;
 import java.util.UUID;
 
 import pain.onec.util.FakePlayerHandler;
-import pain.onec.util.FakePlayerHandler.FakePlayer;
+import meteordevelopment.meteorclient.utils.entity.fakeplayer.FakePlayerEntity;
 
 import pain.onec.OneC;
 
@@ -22,7 +22,7 @@ import pain.onec.OneC;
  */
 
 public class Schizophrenia extends Module {
-    private FakePlayer hero;
+    private FakePlayerEntity hero;
     private int heroMode = 1;
     private int ticksRemaining = 0;
     private int ticksDelay = 0;
@@ -72,9 +72,11 @@ public class Schizophrenia extends Module {
             hero.setPitch(pitch);
 
             // Check for proximity
-            double distance = mc.player.getPos().distanceTo(hero.getPos());
+            Vec3d playerPosVec = new Vec3d(mc.player.getX(), mc.player.getY(), mc.player.getZ());
+            Vec3d heroPosVec = new Vec3d(hero.getX(), hero.getY(), hero.getZ());
+            double distance = playerPosVec.distanceTo(heroPosVec);
 
-            Vec3d toHero = hero.getPos().subtract(mc.player.getEyePos()).normalize();
+            Vec3d toHero = heroPosVec.subtract(mc.player.getEyePos()).normalize();
             Vec3d playerLook = mc.player.getRotationVec(1.0f).normalize();
 
             double dot = toHero.dotProduct(playerLook);
@@ -101,7 +103,7 @@ public class Schizophrenia extends Module {
     private void spawnHero() {
         heroMode = rand.nextInt() % 2;
 
-        Vec3d playerPos = mc.player.getPos();
+        Vec3d playerPos = new Vec3d(mc.player.getX(), mc.player.getY(), mc.player.getZ());
 
         double angle = rand.nextDouble() * 2 * Math.PI;
         double distance = 2;
@@ -120,7 +122,7 @@ public class Schizophrenia extends Module {
         int topY = mc.world.getTopY(Heightmap.Type.MOTION_BLOCKING, (int) spawnX, (int) spawnZ);
         Vec3d spawnPos = new Vec3d(spawnX, topY, spawnZ);
 
-        FakePlayerHandler.add("Herobrine", 20f);
+        FakePlayerHandler.add("Herobrine", 20f, false);
         hero = FakePlayerHandler.get("Herobrine");
         if (hero != null) hero.setPosition(spawnPos.x, spawnPos.y, spawnPos.z);
 

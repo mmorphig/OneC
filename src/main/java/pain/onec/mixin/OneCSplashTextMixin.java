@@ -3,6 +3,7 @@ package pain.onec.mixin;
 import meteordevelopment.meteorclient.systems.config.Config;
 
 import net.minecraft.client.gui.screen.SplashTextRenderer;
+import net.minecraft.text.Text;
 import net.minecraft.client.resource.SplashTextResourceSupplier;
 
 import org.spongepowered.asm.mixin.Mixin;
@@ -29,7 +30,7 @@ public class OneCSplashTextMixin {
 
         if (override) {
             currentIndex = new Random().nextInt(OneCSplashes.size());
-            cir.setReturnValue(new SplashTextRenderer(OneCSplashes.get(currentIndex)));
+            cir.setReturnValue(new SplashTextRenderer(Text.literal(OneCSplashes.get(currentIndex))));
         }
         override = !override;
     }

@@ -109,7 +109,7 @@ public class BuildCase extends Module {
 	
 	    BlockPos nearest = null;
 	    double nearestDist = Double.MAX_VALUE;
-	    Vec3d playerPos = mc.player.getPos();
+		Vec3d playerPos = new Vec3d(mc.player.getX(), mc.player.getY(), mc.player.getZ());
 	
 	    for (BlockPos pos : lockedPositions) {
 	        if (placedPositions.contains(pos)) continue;
@@ -133,6 +133,12 @@ public class BuildCase extends Module {
 	    if (success) {
 	        placedPositions.add(nearest);
 	    }
+
+		// Sometimes, a success is not acually placed, so check it and delete the entry if it's still not a block
+		placedPositions.removeIf(pos -> 
+			!mc.world.getBlockState(pos).isSolidBlock(mc.world, pos)
+		);
+
 	    if (placedPositions.size() == lockedPositions.size()) {
             locked = false;
             placedPositions.clear();
@@ -162,7 +168,7 @@ public class BuildCase extends Module {
     private List<BlockPos> generateStaircasePositions() {
 	    List<BlockPos> positions = new ArrayList<>();
 	
-	    Vec3d playerPos = mc.player.getPos();
+		Vec3d playerPos = new Vec3d(mc.player.getX(), mc.player.getY(), mc.player.getZ());
 	    Direction facing = getCardinalFacing(mc.player.getYaw());
 	    Vec3i directionVec = facing.getVector();
 	
