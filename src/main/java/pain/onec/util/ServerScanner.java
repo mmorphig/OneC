@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import java.util.stream.Collectors;
 import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -15,17 +14,19 @@ import java.nio.file.StandardOpenOption;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.stream.Collectors;
 
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.util.Util;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.network.ServerInfo.ServerType;
 import net.minecraft.client.option.ServerList;
+import net.minecraft.util.Util;
 
 /* 
  * Server Scanner
- * By mmorphig
- * Originally translated from a Python script by mmorphig
+ *
+ * Originally translated from a Python script:
+ * https://github.com/mmorphig/small-things/ping%20mc
  * 
  * This is very inefficient, I do not recommend using this
  */

@@ -3,24 +3,23 @@ package pain.onec.modules;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Module;
-import meteordevelopment.orbit.EventHandler;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
+import meteordevelopment.orbit.EventHandler;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.ExperienceOrbEntity;
 import net.minecraft.item.ExperienceBottleItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
-import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 
 import pain.onec.OneC;
 
 /* 
  * AutoArmorMend module
- * By mmorphig
  */
 
 public class AutoArmorMend extends Module {

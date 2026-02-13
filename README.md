@@ -7,7 +7,7 @@
 
 ## Credit:
 
-Meteor Client, some snippets, the Discord presence module, and the flight module
+Meteor Client, some snippets, the Discord presence module, and the original flight module.
 
 ## v0.5.4 Module List:
 

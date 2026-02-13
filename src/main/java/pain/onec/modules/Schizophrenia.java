@@ -1,8 +1,8 @@
 package pain.onec.modules;
 
-import meteordevelopment.meteorclient.systems.modules.Module;
-import meteordevelopment.meteorclient.systems.modules.Categories;
 import meteordevelopment.meteorclient.events.world.TickEvent;
+import meteordevelopment.meteorclient.systems.modules.Categories;
+import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.orbit.EventHandler;
 
 import net.minecraft.util.math.MathHelper;
@@ -12,13 +12,13 @@ import net.minecraft.world.Heightmap;
 import java.util.Random;
 import java.util.UUID;
 
-import pain.onec.util.FakePlayerHandler;
 import meteordevelopment.meteorclient.utils.entity.fakeplayer.FakePlayerEntity;
+import pain.onec.util.FakePlayerHandler;
 
 import pain.onec.OneC;
 
-/* Fun module :)
- * By mmorphig 
+/* 
+ * Fun module :)
  */
 
 public class Schizophrenia extends Module {
@@ -126,7 +126,7 @@ public class Schizophrenia extends Module {
         hero = FakePlayerHandler.get("Herobrine");
         if (hero != null) hero.setPosition(spawnPos.x, spawnPos.y, spawnPos.z);
 
-        ticksRemaining = 20 * (60 + rand.nextInt(241)); // 1–5 minutes
+        ticksRemaining = 20 * (60 + rand.nextInt(241)); // 1–5 minutes (60-300 seconds)
     }
 
     private void despawnHero() {

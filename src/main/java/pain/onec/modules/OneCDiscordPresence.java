@@ -37,7 +37,7 @@ import pain.onec.OneC;
 /*
  * Discord presence module
  * Created by squidoodly (from Meteor Client)
- * Edited by mmorphig
+ * Edited to be OneC
  */
 
 public class OneCDiscordPresence extends Module {

@@ -11,10 +11,10 @@ import meteordevelopment.meteorclient.gui.widgets.pressable.WButton;
 import meteordevelopment.meteorclient.gui.widgets.containers.WTable;
 import meteordevelopment.meteorclient.gui.widgets.containers.WHorizontalList;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.network.ServerInfo.ServerType;
 import net.minecraft.client.option.ServerList;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.Util;
 
 import java.io.File;
@@ -22,6 +22,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 import pain.onec.util.ServerScanner;
+
 
 public class ServerScannerScreen extends WindowScreen {
     private WTextBox startIpField;

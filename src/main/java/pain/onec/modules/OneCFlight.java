@@ -9,20 +9,20 @@ import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.orbit.EventHandler;
 
-import net.minecraft.entity.MovementType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.MovementType;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import net.minecraft.network.packet.s2c.play.PlayerAbilitiesS2CPacket;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 
 import pain.onec.OneC;
 
 /*
  * Made by... someone from the Meteor Client dev team?
- * Edited by mmorphig (all I did was change the anti-kick)
+ * All I did was change the anti-kick
  */
 
 public class OneCFlight extends Module {

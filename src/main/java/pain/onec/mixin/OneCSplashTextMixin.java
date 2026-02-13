@@ -3,8 +3,8 @@ package pain.onec.mixin;
 import meteordevelopment.meteorclient.systems.config.Config;
 
 import net.minecraft.client.gui.screen.SplashTextRenderer;
-import net.minecraft.text.Text;
 import net.minecraft.client.resource.SplashTextResourceSupplier;
+import net.minecraft.text.Text;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 import java.util.Random;
+
 
 @Mixin(SplashTextResourceSupplier.class)
 public class OneCSplashTextMixin {

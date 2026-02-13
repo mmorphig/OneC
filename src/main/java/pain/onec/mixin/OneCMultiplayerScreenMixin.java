@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import pain.onec.gui.screen.ServerScannerScreen;
 
+
 @Mixin(MultiplayerScreen.class)
 public abstract class OneCMultiplayerScreenMixin extends Screen {
     protected OneCMultiplayerScreenMixin(Text title) {

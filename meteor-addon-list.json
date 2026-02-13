@@ -1,0 +1,13 @@
+{
+  "description": "Not necessarily useful modules for most people, also poorly maintained.",
+  "tags": [
+    "PvP",
+    "Utility"
+  ],
+  "supported_versions": [
+    "1.21.11"
+  ],
+  "icon": "https://github.com/mmorphig/OneC/blob/main/src/main/resources/assets/icon/icon.png?raw=true",
+  "discord": "https://discord.gg/zrYnnm3KuU",
+  "homepage": "https://github.com/mmorphig/onec"
+}

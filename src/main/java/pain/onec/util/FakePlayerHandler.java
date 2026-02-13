@@ -9,9 +9,10 @@ import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 import static meteordevelopment.meteorclient.MeteorClient.mc;
-/* Fake player handler but it uses skin.png from this mod
+
+/* 
+ * Fake player handler
  * Taken from meteor client's source, smashed into a single file
- * Modified by mmorphig
  */
 
 public class FakePlayerHandler {

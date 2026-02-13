@@ -1,32 +1,31 @@
 package pain.onec.modules;
 
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
-import meteordevelopment.meteorclient.utils.player.FindItemResult;
-import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.renderer.ShapeMode;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Module;
+import meteordevelopment.meteorclient.utils.player.FindItemResult;
+import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
-import meteordevelopment.orbit.EventHandler;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
+import meteordevelopment.orbit.EventHandler;
 
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.BlockItem;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3i;
 
-import java.util.HashSet;
-import java.util.Set;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import pain.onec.OneC;
 
 /*
  * Staircase module
- * Created by mmorphig
  * 
  * Inspiration for some bits from meteor's airplace and scaffold.
  */

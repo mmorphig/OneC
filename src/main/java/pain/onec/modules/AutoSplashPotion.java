@@ -3,30 +3,29 @@ package pain.onec.modules;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Module;
-import meteordevelopment.orbit.EventHandler;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
+import meteordevelopment.orbit.EventHandler;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.BlockState;
 
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.PotionContentsComponent;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ThrowablePotionItem;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Hand;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
 
 import pain.onec.OneC;
 
 /* 
  * AutoSplashPotion module
- * By mmorphig
  */
 
 public class AutoSplashPotion extends Module {
