@@ -26,7 +26,7 @@ import net.minecraft.util.Util;
  * Server Scanner
  *
  * Originally translated from a Python script:
- * https://github.com/mmorphig/small-things/ping%20mc
+ * https://github.com/mmorphig/small-things/blob/main/ping%20mc/pinger.py
  * 
  * This is very inefficient, I do not recommend using this
  */
